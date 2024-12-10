@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                console.log('Hello world');
+                let x=20;
+                let y =10;
+                let result = x+y;
+
+                console.log("Sum", x+y);
+                console.log("differnce", x - y);
+                console.log("product", x * y);
+                console.log("Qoutient", x/y );
+                
+                function checkEvenOdd(number){
+                    if(number % 2 === 0){
+                        console.log(`${number} is even`)
+                    }else{
+                        console.log(`${number} is odd`);
+                    }
+                }
+                //function to calcualte the area of a circle
+                function calculateAreaOfCircle(radius){
+                    //Formula for area of circle: A = π * r^2
+                    const area = Math.PI * Math.pow(radius, 2);
+                    console.log(`The area of a circle with radius ${radius} is ${area}`);
+                }
+                // Function to print the multiplication table for a given number
+                function printMultiplicationTable(number){
+                    for(let i =1; i<=10; i++){
+                        console.log(`${number} x ${i} = ${number * i}`);
+                    }
+                }
+
+                 printMultiplicationTable(5);
+
+
+                 checkEvenOdd(10);
+                 checkEvenOdd(3);
+                 calculateAreaOfCircle(5); //
+
+
+
+
+            </script>
+        </body>
+    </head>
+</html>
